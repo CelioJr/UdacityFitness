@@ -108,7 +108,7 @@ export function isBetween (num, x, y) {
         max: 24,
         unit: 'hours',
         step: 1,
-        type: 'sliders',
+        type: 'slider',
         getIcon() {
           return (
             <View>
@@ -145,4 +145,10 @@ export function isBetween (num, x, y) {
       ? info
       : info[metric]
 
+  }
+
+  export function getDailyReminderValue() {
+    return {
+      today: "Don't forget to log your data today"
+    }
   }
