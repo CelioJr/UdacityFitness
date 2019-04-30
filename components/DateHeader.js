@@ -1,10 +1,11 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, StatusBar} from 'react-native'
+import { purple } from '../utils/colors';
 
 export default function DateHeader( {date} ) {
   return (
     <View>
-        <Text>
+        <Text style={{color: purple, fontSize: 26, marginTop:  StatusBar.currentHeight}}>
             { date }
         </Text>
     </View>

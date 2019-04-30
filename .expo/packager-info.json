@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 1445,
-  "expoServerNgrokUrl": "https://ps-cvr.celiofjunior01.udacityfitness.exp.direct",
-  "packagerNgrokUrl": "https://packager.ps-cvr.celiofjunior01.udacityfitness.exp.direct",
-  "ngrokPid": 1519
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

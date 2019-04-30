@@ -1,25 +1,28 @@
 import React from 'react'
-import { View, Text, Slider } from 'react-native'
+import { View, Text, Slider, StyleSheet } from 'react-native'
+import { gray } from '../utils/colors'
+import MetricCounter from './MetricCounter';
 
 export default function UdaciSlider({ max, unit, step, value, onChange }) {
     return (
-        <View>
+        <View style={styles.row}>
             <Slider
+                style={{flex:1}}
                 step={step}
                 value={value}
                 maximumValue={max}
                 minimumValue={0}
                 onValueChange={onChange}
             />
-            <View>
-                <Text>
-                    {value}
-                </Text>
-                <Text>
-                    {unit}
-                </Text>
-            </View>
+            <MetricCounter value={value} unit={unit} />
         </View>
     )
 }
 
+const styles = StyleSheet.create({
+    row: {
+        flexDirection: 'row',
+        flex: 1,
+        alignItems: 'center'
+    }
+})
